@@ -1,0 +1,10 @@
+<div class="main">
+  <div>
+    <label for="cep">CEP:</label>
+    <input type="text" name="cep" id="cep" [(ngModel)] = "cep"/>
+  </div>
+  <div>
+    <button (click)="buscarEndereco()">Buscar</button>
+  </div>
+</div>
+<app-tabela [endereco]="endereco" ></app-tabela>
